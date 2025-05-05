@@ -6,7 +6,6 @@ const int sensorPin = 6;
 
 void setup()
 {
-  //Serial.begin(9600);
   pinMode(vermelho, OUTPUT);
   pinMode(verde, OUTPUT);
   pinMode(azul, OUTPUT);
@@ -36,9 +35,6 @@ long medirDistancia()
 void loop()
 {
   long distancia = medirDistancia();
-  Serial.print("Distancia: ");
-  Serial.print(distancia);
-  Serial.print(" cm");
   
   //limite mínimo = 20cm; (azul)
   //médio - entre 21 e 160; (verde)
